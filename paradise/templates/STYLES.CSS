@@ -1,0 +1,234 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #2C3E50; /* Dark Slate Gray */
+    background-color: #FAF3E0; /* Light Beige */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #4CAF50; /* Earthy Green */
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    flex: 1; /* Allow nav to take available space */
+}
+
+.navbar nav a {
+    color: white;
+    margin: 0 1.5em; /* Adjusted margin for even spacing */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Adjust the login button */
+.login-signup {
+    margin-left: auto; /* Push the button to the right */
+    padding: 0.5em 2em;
+    background-color: #FFEB3B; /* Bright Yellow */
+    color: rgb(77, 75, 75);
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.logo {
+    font-size: 1.8em;
+    margin-right: 7em;
+}
+
+.logo-green {
+    color: #4CAF50; /* Earthy Green */
+    font-weight: bold;
+}
+
+.logo-brown {
+    color: #3E2723; /* Dark Brown */
+    font-weight: bold;
+}
+
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #E0F2F1; /* Light Aqua Green */
+    padding-top: 6em;
+    text-align: center;
+}
+
+.home-content h2 {
+    font-size: 2.5em;
+    color: #4CAF50; /* Earthy Green */
+    margin-bottom: 1em;
+}
+
+.home-content button {
+    margin-top: 1em;
+    padding: 1em 2em;
+    background: #FFEB3B; /* Bright Yellow */
+    color: black;
+    color: rgb(77, 75, 75);
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Resources Section */
+.resources {
+    padding: 3em;
+    background: #E0F7FA; /* Light Aqua */
+    text-align: center;
+}
+
+.resource-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em; /* Space between cards */
+    margin-top: 2em;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 250px; /* Fixed width for cards */
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.2s; /* Animation effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Demo Section */
+.demo {
+    padding: 3em;
+    background-color: #E0F2F1; /* Light Aqua Green */
+    text-align: center;
+}
+
+.demo video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em;
+    background-color: #E0F7FA; /* Light Aqua */
+}
+
+.contact-form {
+    flex: 1;
+    margin: 1em;
+    padding: 2em; /* Added padding for spacing */
+    background-color: white; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.live-view {
+    flex: 1;
+    margin: 1em;
+    padding: 2em; /* Added padding for spacing */
+    background-color: white; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.contact-form h2, .live-view h3 {
+    margin-bottom: 1em;
+    color: #4CAF50; /* Earthy Green for headings */
+}
+
+.contact-form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+    color: #2C3E50; /* Dark Slate Gray for labels */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.contact-form button {
+    padding: 0.7em;
+    background-color: #4CAF50; /* Earthy Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.contact-form button:hover {
+    background-color: #388E3C; /* Darker shade on hover */
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    margin-top: 1em; /* Add some spacing above the social media icons */
+}
+
+.social-media a img {
+    width: 30px; /* Slightly larger size for icons */
+    margin: 0 0.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Stack on smaller screens */
+    }
+
+    .live-view, .contact-form {
+        margin: 0; /* Remove margin for better spacing */
+        width: 100%; /* Full width on smaller screens */
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise</title>
+    <link rel="stylesheet" href="./STYLES.CSS">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="logo"><span class="logo-">Para</span><span class="logo-brown">dise</span></h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#resources">Resources</a>
+            <a href="#demo">Product Demo</a>
+            <a href="#contact">Contact</a>
+            <button class="login-signup" onclick="redirectToReactPage()">Login</button>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h2>Revolutionizing E-Waste Management in Kenya</h2>
+            <p>Learn about our AI-powered solution to identify and manage e-waste effectively, protect the environment, and promote sustainable practices in Nairobi.</p>
+            <button onclick="redirectToDemo()">Start Product Demo</button>
+        </div>
+    </section>
+<!-- Resources Section -->
+<section id="resources" class="resources">
+    <h2>Resources on E-Waste and Management</h2>
+    <div class="resource-cards">
+        <div class="card" onclick="window.open('https://www.unep.org/resources', '_blank')">
+            <h3>UNEP E-Waste Management Resources</h3>
+            <p>Access comprehensive resources on e-waste management from the United Nations Environment Programme.</p>
+        </div>
+        <div class="card" onclick="window.open('https://www.wbcsd.org/Programs/Circular-Economy', '_blank')">
+            <h3>World Business Council for Sustainable Development</h3>
+            <p>Explore initiatives aimed at promoting a circular economy and sustainable practices.</p>
+        </div>
+        <div class="card" onclick="window.open('https://www.who.int/news-room/fact-sheets/detail/e-waste', '_blank')">
+            <h3>WHO E-Waste Health Risks</h3>
+            <p>Learn about the health risks associated with e-waste as outlined by the World Health Organization.</p>
+        </div>
+        <div class="card" onclick="window.open('https://www.ewaste-africa.com/', '_blank')">
+            <h3>E-Waste Africa Initiative</h3>
+            <p>Discover efforts to tackle e-waste challenges in Africa and promote responsible disposal.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Product Demo Section -->
+    <section id="demo" class="demo">
+        <h2>Product Demo</h2>
+        <video controls>
+            <source src="paradise-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="live-view">
+        <h3>Live View of Kiriri Women's University</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31706.16716993855!2d36.78568245094727!3d-1.2764641000000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10b93b22d3ed%3A0xe5b2b5b5f4e3a80b!2sKiriri%20Women&#39;s%20University%20of%20Science%20and%20Technology!5e0!3m2!1sen!2ske!4v1635060243994!5m2!1sen!2ske" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/mzzbegar" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-media">
+            <a href="https://twitter.com/" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://youtube.com/" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
+            <a href="https://tiktok.com/" target="_blank"><img src="tiktok-icon.png" alt="TikTok"></a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Happy Fools Team. All Rights Reserved.</p>
+</footer>
+
+
+    <script src="./SCRIPTS.JS"></script>
+</body>
+</html>
